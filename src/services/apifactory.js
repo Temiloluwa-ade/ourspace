@@ -1,8 +1,8 @@
 import axios from "axios";
 
-const baseUrl = "http://46.101.27.224/api/";
+const baseUrl = "http://46.101.27.224/";
 
-const ApiFactory = {
+const apiFactory = {
   $_login(payload) {
     const url = `${baseUrl}admin/login`;
     return axios.post(url, payload);
@@ -45,4 +45,4 @@ const ApiFactory = {
   }
 }
 
-export default ApiFactory;
+export default apiFactory;
